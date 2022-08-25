@@ -18,7 +18,7 @@ You can read a brief overview of this design consideration(CAP Theorem) in the C
 
 
 A benefit of Cassandra's design is that these considerations can be tuned for any given transaction. You could select from one extreme of requiring all nodes to acknowledge reads and writes,
-to the other extreme of only needing a single acknowledgment. This does directly play into the performance of the system however, so maximum consistency in Cassandra could be less performant
+to the other extreme of only needing an acknowledgment from a single node. This does directly play into the performance of the system however, so maximum consistency in Cassandra could be less performant
 than equivalent Relational systems.
 
 - [Configurable Consistency](https://docs.datastax.com/en/cassandra-oss/3.0/cassandra/dml/dmlConfigConsistency.html)
